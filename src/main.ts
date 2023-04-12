@@ -8,7 +8,7 @@ import { createPinia } from 'pinia';
 
 const app = createApp(App);
 const pinia = createPinia();
-
+console.log('test');
 app.use(router);
 app.use(pinia);
 
