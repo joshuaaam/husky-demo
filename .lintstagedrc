@@ -1,0 +1,4 @@
+{
+      "src/**/*.{js,vue}": "npm run lint"
+}
+

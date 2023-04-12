@@ -1,0 +1,15 @@
+###
+ # @Author: g05047
+ # @Date: 2023-04-12 17:00:29
+ # @LastEditors: g05047
+ # @LastEditTime: 2023-04-12 17:14:27
+ # @Description: file content
+### 
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# npm run prettier:check
+npm run prettier:check && git add -A .
+
+
+# npm run lint
