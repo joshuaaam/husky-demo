@@ -56,31 +56,31 @@ module.exports = {
                                 chalk.red(
                                     '  \u5408\u6CD5\u7684\u63D0\u4EA4\u65E5\u5FD7\u683C\u5F0F\u5982\u4E0B(emoji \u548C \u6A21\u5757\u53EF\u9009\u586B)\uFF1A\n\n'
                                 ),
-                                '    \n        '
+                                '    \n'
                             )
                             .concat(
                                 chalk.green(
                                     '[<emoji>] [revert: ?]<type>[(scope)?]: <message>\n'
                                 ),
-                                '\n        '
+                                '\n'
                             )
                             .concat(
                                 chalk.green(
                                     '\uD83D\uDCA5 feat(\u6A21\u5757): \u6DFB\u52A0\u4E86\u4E2A\u5F88\u68D2\u7684\u529F\u80FD'
                                 ),
-                                '\n        '
+                                '\n'
                             )
                             .concat(
                                 chalk.green(
                                     '\uD83D\uDC1B fix(\u6A21\u5757): \u4FEE\u590D\u4E86\u4E00\u4E9B bug'
                                 ),
-                                '\n        '
+                                '\n'
                             )
                             .concat(
                                 chalk.green(
                                     '\uD83D\uDCDD docs(\u6A21\u5757): \u66F4\u65B0\u4E86\u4E00\u4E0B\u6587\u6863'
                                 ),
-                                '\n        '
+                                '\n'
                             )
                             .concat(
                                 chalk.green(
