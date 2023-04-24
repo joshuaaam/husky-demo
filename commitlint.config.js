@@ -42,7 +42,8 @@ module.exports = {
         {
             rules: {
                 'type-enum-rule': ({ header }) => {
-                    console.error(
+                    return [
+                        checkType(header),
                         '  '
                             .concat(chalk.bgRed.white(' ERROR '), ' ')
                             .concat(
@@ -109,14 +110,10 @@ module.exports = {
                                 chalk.red(
                                     'See https://github.com/vuejs/core/blob/main/.github/commit-convention.md\n'
                                 )
-                            )
-                    );
-                    // return [
-                    //     checkType(header),
-
-                    //     // '需要包含提交类型，格式如: "feat: 开发新功能" 中的feat, ' +
-                    //     //     '可选值有: feat/fix/style/test/chore/ci/..., 类型后面紧跟英文冒号分隔主题信息',
-                    // ];
+                            ),
+                        // '需要包含提交类型，格式如: "feat: 开发新功能" 中的feat, ' +
+                        //     '可选值有: feat/fix/style/test/chore/ci/..., 类型后面紧跟英文冒号分隔主题信息',
+                    ];
                 },
                 'subject-enum-rule': ({ header }) => {
                     return [
