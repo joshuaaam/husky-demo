@@ -2,7 +2,7 @@
  * @Author: g05047
  * @Date: 2023-04-12 17:00:29
  * @LastEditors: g05047
- * @LastEditTime: 2023-04-24 15:19:49
+ * @LastEditTime: 2023-04-24 15:27:24
  * @Description: file content
 -->
 <script setup lang="ts">
@@ -19,7 +19,7 @@ import HelloWorld from './components/HelloWorld.vue';
 <style scoped>
 .logo {
     height: 6em;
-    padding: 1.5em
+    padding: 1.5em;
     will-change: filter;
 }
 .logo:hover {
