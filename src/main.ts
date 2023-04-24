@@ -1,3 +1,10 @@
+/*
+ * @Author: g05047
+ * @Date: 2023-04-12 17:00:29
+ * @LastEditors: g05047
+ * @LastEditTime: 2023-04-14 14:24:31
+ * @Description: file content
+ */
 import { createApp } from 'vue';
 import './style.css';
 import 'amfe-flexible';

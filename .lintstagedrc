@@ -1,4 +1,8 @@
 {
-      "src/**/*.{js,vue}": "npm run lint"
+      "src/**/*.{js,vue,ts}": "npm run lint",
+      "**/*.{js,jsx,vue,ts,less,md,json}": [
+                  "prettier --write"
+      ]
+      
 }
 
