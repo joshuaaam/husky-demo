@@ -12,3 +12,10 @@ husky是一个Git hooks工具，能够在项目中配置hooks脚本；当我们�
 
 ### 添加脚本
 `npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'`
+
+运行完该命令后.husky目录下新增了一个名为commit-msg的shell脚本
+
+### 安装插件
+`pnpm add @commitlint/cli @commitlint/config-conventional -D`
+
+
