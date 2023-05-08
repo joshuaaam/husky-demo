@@ -14,13 +14,6 @@ npm install -D husky
 npx husky install
 ```
 
-### 添加脚本
-```
-npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
-```
-
-运行完该命令后.husky目录下新增了一个名为`commit-msg`的shell脚本
-
 ### 安装插件
 ```
 pnpm add @commitlint/cli @commitlint/config-conventional -D
@@ -57,7 +50,17 @@ npx --no-install lint-staged
 ```
 
 ## commitlint
+
 ### 1、什么是commitlint?
 `commitlint`是一个提交验证工具。原理是可以在实际的 git commit 提交到远程仓库之前使用 git 钩子来验证信息。提交不符合规则的信息将会被阻止提交到远程仓库。
-### 2、为什么要使用commitlint？
 
+### 2、为什么要使用commitlint？
+在任何的工程化的项目中都是不可或缺的部分啦，规范的 commit 不仅有助于他人 review, 还可以有效的输出 CHANGELOG，甚至对于项目的研发质量都有很大的提升
+
+
+### 添加脚本
+```
+npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
+```
+
+运行完该命令后.husky目录下新增了一个名为`commit-msg`的shell脚本
