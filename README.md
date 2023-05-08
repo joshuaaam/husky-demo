@@ -1,4 +1,4 @@
-# 关于 husky、commitlint、eslint、prettier 使用
+# 关于 husky、commitlint、eslint、lint-staged 使用
 
 ## husky
 
@@ -19,3 +19,29 @@ husky是一个Git hooks工具，能够在项目中配置hooks脚本；当我们�
 `pnpm add @commitlint/cli @commitlint/config-conventional -D`
 
 
+## lint-staged
+在代码提交之前，进行代码规则检查能够确保代码都是符合代码规则的。但是整个项目上运行lint速度会很慢，lint-staged能让lint只扫描暂存区的文件而不是全盘扫描
+
+### 安装
+`npm i lint-staged -D`
+
+### 配置
+
+` "scripts": {
+    ...
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "eslint --fix"
+    ]
+  },
+`
+
+### 在pre-commit新增命令
+`
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npx --no-install lint-staged
+
+`
