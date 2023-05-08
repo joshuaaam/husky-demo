@@ -27,7 +27,8 @@ husky是一个Git hooks工具，能够在项目中配置hooks脚本；当我们�
 
 ### 配置
 
-` "scripts": {
+```
+"scripts": {
     ...
   },
   "lint-staged": {
@@ -35,10 +36,12 @@ husky是一个Git hooks工具，能够在项目中配置hooks脚本；当我们�
       "eslint --fix"
     ]
   },
-`
+```
 
 ### 在pre-commit新增命令
 
-`#!/usr/bin/env sh . "$(dirname -- "$0")/_/husky.sh"
+```
+#!/usr/bin/env sh . "$(dirname -- "$0")/_/husky.sh"
 
-npx --no-install lint-staged`
+npx --no-install lint-staged
+```
