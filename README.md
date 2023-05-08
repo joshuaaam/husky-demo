@@ -57,5 +57,7 @@ npx --no-install lint-staged
 ```
 
 ## commitlint
-commitlint是一个提交验证工具。原理是可以在实际的 git commit 提交到远程仓库之前使用 git 钩子来验证信息。提交不符合规则的信息将会被阻止提交到远程仓库。
+### 什么是commitlint?
+`commitlint`是一个提交验证工具。原理是可以在实际的 git commit 提交到远程仓库之前使用 git 钩子来验证信息。提交不符合规则的信息将会被阻止提交到远程仓库。
+### 为什么要使用commitlint
 
