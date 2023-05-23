@@ -2,16 +2,20 @@
 
 ## husky
 
-`husky`是一个Git hooks工具，能够在项目中配置hooks脚本；当我们执行git操作时，自动触发配置的脚本；并且在指定git hook 钩子去配置要执行的脚本
+`husky`是一个Git hooks工具，当你提交或推送时，可以使用它来整理你的提交消息、运行测试、lint 代码等。Husky 支持所有 Git 钩子
 
-### 安装
-```
-npm install -D husky
-```
 
-### 创建.husky文件
+### 初始化husky
 ```
-npx husky install
+npx husky-init && npm install
+
+```
+执行这个命令，他会：
+
+### 添加hook
+
+```
+npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
 ```
 
 
