@@ -8,7 +8,6 @@
 ### 初始化husky
 ```
 npx husky-init && npm install
-
 ```
 执行这个命令，他会：
 
